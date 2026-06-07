@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design tokens (UI/UX Pro Max: Data-Dense Dashboard / Fintech) ── */
+:root {
+  --font-heading: "Fira Code";
+  --font-body: "Fira Sans";
+
+  --color-primary: #1e40af;       /* blue-800 — primary actions, active nav */
+  --color-on-primary: #ffffff;
+  --color-secondary: #3b82f6;     /* blue-500 — links, secondary series */
+  --color-accent: #d97706;        /* amber-600 — CTAs, highlights (WCAG-adjusted) */
+  --color-background: #f8fafc;     /* slate-50 — app canvas */
+  --color-foreground: #1e3a8a;     /* deep navy — primary text */
+  --color-card: #ffffff;
+  --color-muted: #e9eef6;          /* muted surfaces / hover rows */
+  --color-muted-foreground: #64748b;
+  --color-border: #dbeafe;
+  --color-destructive: #dc2626;
+  --color-ring: #1e40af;
+
+  /* Status (financial) — always paired with icon/text, never color alone */
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+}
+
+.dark {
+  --color-primary: #3b82f6;
+  --color-on-primary: #f8fafc;
+  --color-secondary: #60a5fa;
+  --color-accent: #f59e0b;
+  --color-background: #0b1220;     /* deep slate canvas */
+  --color-foreground: #e2e8f0;
+  --color-card: #111a2e;
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  --color-border: #1e293b;
+  --color-destructive: #f87171;
+  --color-ring: #3b82f6;
+
+  --color-success: #4ade80;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tabular figures for all financial numbers — prevents digit jitter */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-heading), ui-monospace, monospace;
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
