@@ -13,7 +13,7 @@ export function Topbar() {
 
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center gap-3 border-b border-border bg-background/80 px-4 backdrop-blur sm:px-6">
-      <div className="lg:hidden font-mono font-semibold text-foreground">Finovo</div>
+      <div className="lg:hidden font-mono font-semibold text-foreground">Meridian</div>
 
       {/* Search */}
       <div className="relative hidden flex-1 sm:block">

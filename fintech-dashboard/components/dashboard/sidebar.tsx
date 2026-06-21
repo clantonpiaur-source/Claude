@@ -28,9 +28,9 @@ export function Sidebar() {
       <aside className="hidden lg:flex w-60 shrink-0 flex-col border-r border-border bg-card">
         <div className="flex h-16 items-center gap-2 border-b border-border px-6">
           <div className="grid h-8 w-8 place-items-center rounded-md bg-primary text-primary-foreground font-mono font-bold">
-            F
+            M
           </div>
-          <span className="font-mono text-lg font-semibold text-foreground">Finovo</span>
+          <span className="font-mono text-lg font-semibold text-foreground">Meridian</span>
         </div>
         <nav className="flex-1 space-y-1 p-3" aria-label="Primary">
           {nav.map(({ label, icon: Icon }) => {

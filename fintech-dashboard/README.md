@@ -1,6 +1,13 @@
-# Finovo — Fintech SaaS Dashboard
+# Meridian — Fintech SaaS
 
-A real-time financial analytics dashboard built with **Next.js 14 (App Router) + Tailwind CSS + shadcn-style components + Recharts**, implementing the **UI/UX Pro Max** design system (style: *Data-Dense Dashboard*).
+A marketing **landing page** (`/`) plus a real-time financial analytics **dashboard** (`/dashboard`), built with **Next.js 14 (App Router) + Tailwind CSS + shadcn-style components + Recharts**, implementing the **UI/UX Pro Max** design system (style: *Data-Dense Dashboard*).
+
+## Routes
+
+| Route | Description |
+|-------|-------------|
+| `/` | Marketing landing page — hero, features, how-it-works, stats, security, pricing, testimonial, CTA, footer |
+| `/dashboard` | The product: KPIs, charts, goals, and transactions |
 
 ## Getting started
 
@@ -29,10 +36,12 @@ Tokens live in `app/globals.css` (`:root` for light, `.dark` for dark mode) and 
 
 ```
 app/
-  layout.tsx          # root + globals
-  page.tsx            # dashboard composition
+  layout.tsx          # root + globals + metadata
+  page.tsx            # landing page composition
+  dashboard/page.tsx  # dashboard composition
 components/
   ui/                 # shadcn-style primitives (card, button, badge)
+  landing/            # header, hero, features, pricing, footer, …
   dashboard/          # sidebar, topbar, kpi-card, charts, table
 lib/
   data.ts             # mock data — swap for your API
