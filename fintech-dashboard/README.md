@@ -22,8 +22,10 @@ Tokens live in `app/globals.css` (`:root` for light, `.dark` for dark mode) and 
 | `--color-accent` | `#D97706` | CTAs, highlights (WCAG-adjusted) |
 | `--color-success / warning / danger` | green / amber / red | Financial status |
 
-- **Fonts:** Fira Code (headings/numbers) + Fira Sans (body).
+- **Fonts:** Inter (display/body, tight tracking) + JetBrains Mono (tabular numbers/metrics).
 - **Tabular figures:** the `.tabular` utility keeps prices/metrics aligned and jitter-free on update.
+- **Elevation:** layered surfaces with a soft `--shadow-sm/md/lg` scale; cards lift on hover.
+- **Motion:** staggered `fade-up` section entrances and 200ms interaction transitions, all gated behind `prefers-reduced-motion`.
 
 ## Structure
 
