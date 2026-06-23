@@ -1,11 +1,21 @@
 // Mock data for the dashboard. Swap with real API calls.
 
-export const kpis = [
-  { label: "Total Balance", value: 2847500, deltaPct: 12.4, currency: true },
-  { label: "Revenue (MTD)", value: 482300, deltaPct: 8.1, currency: true },
-  { label: "MRR", value: 96400, deltaPct: 4.6, currency: true },
-  { label: "Churn Rate", value: 1.8, deltaPct: -0.3, currency: false, suffix: "%" },
-] as const;
+export type Kpi = {
+  label: string;
+  value: number;
+  deltaPct: number;
+  currency?: boolean;
+  suffix?: string;
+  icon: "balance" | "revenue" | "mrr" | "churn";
+  spark: number[];
+};
+
+export const kpis: Kpi[] = [
+  { label: "Total Balance", value: 2847500, deltaPct: 12.4, currency: true, icon: "balance", spark: [38, 41, 39, 45, 44, 52, 58, 63] },
+  { label: "Revenue (MTD)", value: 482300, deltaPct: 8.1, currency: true, icon: "revenue", spark: [22, 28, 26, 33, 31, 40, 44, 49] },
+  { label: "MRR", value: 96400, deltaPct: 4.6, currency: true, icon: "mrr", spark: [60, 62, 63, 66, 68, 71, 74, 78] },
+  { label: "Churn Rate", value: 1.8, deltaPct: -0.3, currency: false, suffix: "%", icon: "churn", spark: [30, 28, 31, 26, 24, 22, 21, 18] },
+];
 
 export const revenueSeries = [
   { month: "Jan", revenue: 312000, expenses: 210000 },

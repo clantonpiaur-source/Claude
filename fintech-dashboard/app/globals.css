@@ -1,67 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ── Design tokens (UI/UX Pro Max: Data-Dense Dashboard / Fintech) ── */
+/* ──────────────────────────────────────────────────────────────────────────
+   Design tokens — UI/UX Pro Max: Data-Dense Dashboard / Premium Fintech
+   Layered surfaces, soft elevation, semantic status colors. Light + dark
+   designed together. All financial status colors are paired with icon/text.
+   ────────────────────────────────────────────────────────────────────────── */
 :root {
-  --font-heading: "Fira Code";
-  --font-body: "Fira Sans";
+  --font-body: "Inter";
+  --font-heading: "Inter";
+  --font-mono: "JetBrains Mono";
 
-  --color-primary: #1e40af;       /* blue-800 — primary actions, active nav */
+  /* Brand */
+  --color-primary: #2563eb;          /* blue-600 — primary actions, active nav */
+  --color-primary-strong: #1d4ed8;   /* blue-700 — gradient end / pressed */
   --color-on-primary: #ffffff;
-  --color-secondary: #3b82f6;     /* blue-500 — links, secondary series */
-  --color-accent: #d97706;        /* amber-600 — CTAs, highlights (WCAG-adjusted) */
-  --color-background: #f8fafc;     /* slate-50 — app canvas */
-  --color-foreground: #1e3a8a;     /* deep navy — primary text */
-  --color-card: #ffffff;
-  --color-muted: #e9eef6;          /* muted surfaces / hover rows */
+  --color-secondary: #3b82f6;        /* blue-500 — links, secondary series */
+  --color-accent: #d97706;           /* amber-600 — CTAs, highlights (WCAG-adjusted) */
+
+  /* Surfaces — layered for depth */
+  --color-background: #f5f7fb;        /* app canvas */
+  --color-foreground: #0f172a;        /* slate-900 — primary text */
+  --color-card: #ffffff;             /* elevated surface */
+  --color-elevated: #ffffff;
+  --color-muted: #eef2f8;            /* muted surfaces / hover rows */
   --color-muted-foreground: #64748b;
-  --color-border: #dbeafe;
+  --color-border: #e6ebf3;
+  --color-border-strong: #d4dceb;
   --color-destructive: #dc2626;
-  --color-ring: #1e40af;
+  --color-ring: #2563eb;
 
   /* Status (financial) — always paired with icon/text, never color alone */
-  --color-success: #16a34a;
-  --color-warning: #d97706;
+  --color-success: #15803d;
+  --color-warning: #b45309;
   --color-danger: #dc2626;
+
+  /* Data-viz palette */
+  --chart-1: #2563eb;
+  --chart-2: #8b5cf6;
+  --chart-3: #d97706;
+  --chart-4: #0d9488;
+
+  /* Elevation scale */
+  --shadow-sm: 0 1px 2px 0 rgb(15 23 42 / 0.04), 0 1px 3px 0 rgb(15 23 42 / 0.06);
+  --shadow-md: 0 2px 4px -1px rgb(15 23 42 / 0.05), 0 8px 16px -4px rgb(15 23 42 / 0.08);
+  --shadow-lg: 0 4px 8px -2px rgb(15 23 42 / 0.06), 0 16px 32px -8px rgb(15 23 42 / 0.12);
+  --ring-glow: 0 0 0 1px rgb(37 99 235 / 0.08);
 }
 
 .dark {
   --color-primary: #3b82f6;
+  --color-primary-strong: #2563eb;
   --color-on-primary: #f8fafc;
   --color-secondary: #60a5fa;
   --color-accent: #f59e0b;
-  --color-background: #0b1220;     /* deep slate canvas */
-  --color-foreground: #e2e8f0;
-  --color-card: #111a2e;
-  --color-muted: #1e293b;
+
+  --color-background: #080c16;       /* deep slate canvas */
+  --color-foreground: #e8edf6;
+  --color-card: #0f1729;             /* elevated surface */
+  --color-elevated: #16203a;
+  --color-muted: #18233c;
   --color-muted-foreground: #94a3b8;
   --color-border: #1e293b;
+  --color-border-strong: #2a3954;
   --color-destructive: #f87171;
   --color-ring: #3b82f6;
 
   --color-success: #4ade80;
   --color-warning: #fbbf24;
   --color-danger: #f87171;
+
+  --chart-1: #60a5fa;
+  --chart-2: #a78bfa;
+  --chart-3: #fbbf24;
+  --chart-4: #2dd4bf;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 2px 4px -1px rgb(0 0 0 / 0.35), 0 8px 16px -4px rgb(0 0 0 / 0.45);
+  --shadow-lg: 0 4px 8px -2px rgb(0 0 0 / 0.4), 0 16px 40px -8px rgb(0 0 0 / 0.6);
+  --ring-glow: 0 0 0 1px rgb(59 130 246 / 0.15);
 }
 
 * {
   border-color: var(--color-border);
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-body), system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* Tabular figures for all financial numbers — prevents digit jitter */
 .tabular {
   font-variant-numeric: tabular-nums;
-  font-family: var(--font-heading), ui-monospace, monospace;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  letter-spacing: -0.01em;
+}
+
+/* Tight, premium tracking for display headings */
+.display {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Subtle brand gradient text for the wordmark */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-foreground) 0%, var(--color-primary) 140%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Elevated card with a hairline top highlight for a crafted feel */
+.surface {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.surface-hover {
+  transition: box-shadow 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+.surface-hover:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-strong);
+}
+
+/* Refined, unobtrusive scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-strong) transparent;
+}
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-border-strong);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover { background-color: var(--color-muted-foreground); }
+
+::selection {
+  background-color: color-mix(in srgb, var(--color-primary) 22%, transparent);
+}
+
+/* Staggered entrance for dashboard sections */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fade-up 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* Respect reduced motion globally */
@@ -70,6 +170,7 @@ body {
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
 }
