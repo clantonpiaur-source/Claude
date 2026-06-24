@@ -31,6 +31,7 @@ HIGHLANDS,Enga Prov.,Kandep 3G,Kandep,-5.845556,143.512222,Master BTS List,Aging
 HIGHLANDS,Enga Prov.,Unda 3G,Unda,-5.700019,143.907400,Master BTS List,Pending,Affected by BTS Hub,Bronze,,All sectors down. No eyes on power supply
 HIGHLANDS,Enga Prov.,Wabag Hospital 3G/4G,Wabag Hospital,-5.495400,143.728240,Master BTS List,Pending,Lease Payment,Silver,,Fuel Run Dry
 HIGHLANDS,Enga Prov.,Wakumale 3G,Wakumale,-5.496440,143.746990,Master BTS List,Aging,Genset Issue - Current,Bronze,,DG failure
+HIGHLANDS,Enga Prov.,Wapanamanda Exchange 3G/4G,Wapenamanda Exchange,-5.666700,143.916700,User-provided (24 Jun 2026),Current,Genset Issue - Current,Silver,,DG failure
 HIGHLANDS,Enga Prov.,Yaramanda 3G,Yaramanda,-5.669045,143.921534,Master BTS List,Current,Genset Issue - Current,Silver,,DG failure
 HIGHLANDS,HELA,HELA Rooftop 3G/4G,Tari Exchange (hub - affected site),-5.847777,142.944160,Master BTS List (approx.),Unspecified,Affected by BTS Hub,Gold,,Power Failure
 HIGHLANDS,HELA,Tari Exchange 3G/4G,Tari Exchange,-5.847777,142.944160,Master BTS List,Current,Fuel Run Dry,Gold,,Exchange down
@@ -42,6 +43,7 @@ HIGHLANDS,JIWAKA,Nol Community School 3G,Nol,-5.889420,144.659220,Master BTS Lis
 HIGHLANDS,JIWAKA,Nondugul New 3G,Nondugul_New,-5.863980,144.769200,Master BTS List,Aging,Vandalized,Silver,,Site was Vandalized
 HIGHLANDS,Southern Highlands,Gia Secondary BM 3G,Gia Secondary BM,-6.012534,144.030074,Master BTS List,Pending,Solar Power,Silver,,All sectors down. No eyes on power supply
 HIGHLANDS,Southern Highlands,Imi 3G/4G,Imi,-6.120800,144.137280,Master BTS List,New,Affected by HCN,Silver,,Upstream failure
+HIGHLANDS,Southern Highlands,Kiburu 3G/4G,Kiburu,-6.203500,143.662100,User-provided (24 Jun 2026),Pending,Security Payment,Gold,,DG failure
 HIGHLANDS,Southern Highlands,Kumin 3G/4G,Kumin,-6.156024,143.661746,Master BTS List,Current,Genset Issue - Current,Gold,,DG failure
 HIGHLANDS,Southern Highlands,Magnet Hill 3G/4G,Magnet Hill,-6.443167,144.103111,Master BTS List,Current,Genset Issue - Current,Gold,,DG failure
 HIGHLANDS,Southern Highlands,Mendi Road 3G/4G,Mendi Road,-6.226450,143.774630,Master BTS List,Pending,Pending Visit,Gold,,DG failure
@@ -63,8 +65,10 @@ MOMASE,East Sepik Province,Kaltex 3G/4G,Kaltex,-3.576620,143.640000,Master BTS L
 MOMASE,East Sepik Province,Karasau 3G | HCN P6,Karasau,-3.392508,143.449036,Master BTS List,Pending,Genset Issue - Aging,Diamond,,BTS down. ATN down. No eyes on power supply
 MOMASE,East Sepik Province,Kasmin2 3G,Kasmin2,-3.933020,144.015640,Master BTS List,Aging,Genset Issue - Aging,Silver,,Faulty Alternator
 MOMASE,East Sepik Province,Kreer Heights BM 3G,Kreer Heights,-3.584947,143.644406,Master BTS List,Aging,BTS Equipment,Gold,,BM 3G sectors affected
+MOMASE,East Sepik Province,Kuminin 3G,Kuminin (Kuminim),-3.383300,143.200000,User-provided (24 Jun 2026),Aging,Genset Issue - Aging,Silver,,Faulty DG Stater Relay
 MOMASE,East Sepik Province,Kwiyanguande 3G,Kwiyanguande,-3.686580,143.097500,Master BTS List,Unspecified,Affected by BTS Hub,Gold,,Upstream failure
 MOMASE,East Sepik Province,Maprik Town 3G,Maprik Town(Exchange),-3.641690,143.055130,Master BTS List,Unspecified,Affected by BTS Hub,Silver,,Upstream failure
+MOMASE,East Sepik Province,Nuigo 3G/4G,Nuigo (Wewak Area),-3.550000,143.633300,User-provided (24 Jun 2026),Pending,Fuel Run Dry,Silver,,90dBm at far end on radio. i.e. no power supply
 MOMASE,East Sepik Province,Pagwi 3G,Pagwi,-4.054972,143.030722,Master BTS List,Pending,Genset Issue - Current,Silver,,Power failure
 MOMASE,East Sepik Province,Sosaya 3G,Sosaya,-3.694310,143.512300,Master BTS List,Pending,Genset Issue - Current,Silver,,DG failure
 MOMASE,East Sepik Province,Wamoin 3G,Wamoin,-3.725550,143.370240,Master BTS List,Pending,Security Payment,Silver,,Fuel Run Dry
@@ -78,6 +82,7 @@ MOMASE,Eastern Highlands Province,Asaro 3G,Asaro,-6.009290,145.307570,Master BTS
 MOMASE,Eastern Highlands Province,Boda Kolwara_BM 3G,Boda Kolwara BM,-6.273990,145.939700,Master BTS List,Aging,Pending Visit,Bronze,,Upstream failure
 MOMASE,Eastern Highlands Province,Kabiufa High School 3G,Kabiufa High School,-6.003630,145.357890,Master BTS List,Unspecified,Affected by BTS Hub,Silver,,Upstream failure
 MOMASE,Eastern Highlands Province,Kainantu Gold BM 3G/4G,Kainantu Gold New BM,-6.109700,145.885960,Master BTS List,Current,Affected by BTS Hub,Silver,,Upstream failure
+MOMASE,Eastern Highlands Province,Matega | Negemuga 3G,Matega / Negemuga,-6.033300,145.616700,User-provided (24 Jun 2026),Aging,Security Payment,Silver,,DG failure
 MOMASE,Goroka Town,Goroka Show Gound 3G/4G,Goroka Show Ground,-6.073547,145.379245,Master BTS List,Current,Genset Issue - Current,Gold,,DG failure
 MOMASE,Lae Town,Backroad Red BM 3G/4G,Backroad Red BM,-6.684190,147.016980,Master BTS List,Pending,Lease Payment,Gold,,90dBm at far end on radio. i.e. no power supply
 MOMASE,Lae Town,Malaita Street 3G/4G,Malaita Street,-6.728012,146.984660,Master BTS List,Current,Access Issue,Gold,,90dBm at far end on radio. i.e. no power supply
@@ -133,6 +138,7 @@ NGI,AROB,Ameo 3G,Ameo,-6.677500,155.437778,Master BTS List,Aging,Solar Power,Bro
 NGI,AROB,Arawa Exchange 3G/4G,Arawa Exchange,-6.226064,155.564529,Master BTS List,Aging,Genset Issue - Aging,Diamond,,All sectors down. No eyes on power supply
 NGI,AROB,Buin 3G,Buin,-6.748506,155.691103,Master BTS List,Aging,Tx Equipment,Bronze,,Satellite site. No eyes on power feed
 NGI,AROB,Hutjena 3G/4G,Hutjena Exchange,-5.395712,154.681030,Master BTS List,Aging,Genset Issue - Aging,Diamond,,All sectors down. No eyes on power supply
+NGI,East New Britian Province,George Brown 3G,George Brown (Rabaul/Gazelle),-4.216700,152.166700,User-provided (24 Jun 2026),Pending,Station Battery,Gold,,All sectors down. No eyes on power supply
 NGI,East New Britian Province,Kambubu 3G,Kambubu,-4.579117,152.362425,Master BTS List,Current,Pending Visit,Silver,,All sectors down. No eyes on power supply
 NGI,East New Britian Province,Kuraip | Raluan 3G,Raluan,-4.256250,152.132317,Master BTS List,Aging,Lease Payment,Silver,,90dBm at far end on radio. i.e. no power supply
 NGI,East New Britian Province,Nangananga 3G,Nangananga,-4.322525,152.181969,Master BTS List,Aging,Genset Issue - Current,Silver,,DG Failure
@@ -173,9 +179,3 @@ NGI,West New Britain Province,Togulo Plantation 3G,TOGULO PLANTATION,-5.649253,1
 NGI,West New Britain Province,Valoka 3G,Valoka (HOS_3),-5.431430,150.456480,Master BTS List,New,Genset Issue - Current,Silver,,DG Failure
 NGI,West New Britain Province,Vielo 3G,BIAL_5/Vielo,-5.261440,151.091450,Master BTS List,Unspecified,Affected by HCN,Gold,,Upstream failure
 NGI,West New Britain Province,Walindi 3G,Walindi,-5.441800,150.088350,Master BTS List,Pending,BTS Equipment,Silver,,All sectors down. No eyes on power supply
-HIGHLANDS,Enga Prov.,Wapanamanda Exchange 3G/4G,,,,NOT FOUND in master list,Current,Genset Issue - Current,Silver,,DG failure
-HIGHLANDS,Southern Highlands,Kiburu 3G/4G,,,,NOT FOUND in master list,Pending,Security Payment,Gold,,DG failure
-MOMASE,East Sepik Province,Kuminin 3G,,,,NOT FOUND in master list,Aging,Genset Issue - Aging,Silver,,Faulty DG Stater Relay
-MOMASE,East Sepik Province,Nuigo 3G/4G,,,,NOT FOUND in master list,Pending,Fuel Run Dry,Silver,,90dBm at far end on radio. i.e. no power supply
-MOMASE,Eastern Highlands Province,Matega | Negemuga 3G,,,,NOT FOUND in master list,Aging,Security Payment,Silver,,DG failure
-NGI,East New Britian Province,George Brown 3G,,,,NOT FOUND in master list,Pending,Station Battery,Gold,,All sectors down. No eyes on power supply
