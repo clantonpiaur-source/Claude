@@ -17,6 +17,7 @@ This SRS is split into focused, implementation-ready documents. Read in order or
 |---|---------|------|
 | — | Brand & Design System | [`docs/brand-design-system.md`](docs/brand-design-system.md) |
 | — | System Architecture (diagrams) | [`docs/system-architecture.md`](docs/system-architecture.md) |
+| — | UI Screen Inventory (desktop + mobile) | [`docs/ui-screens.md`](docs/ui-screens.md) |
 | 1 | Executive Summary | [`docs/01-executive-summary.md`](docs/01-executive-summary.md) |
 | 2 | Product Vision | [`docs/02-product-vision.md`](docs/02-product-vision.md) |
 | 3 | Functional Requirements | [`docs/03-functional-requirements.md`](docs/03-functional-requirements.md) |
